@@ -8,8 +8,9 @@ function App() {
       <hr />
       <h2>Images and Alterative Text</h2>
       <div className="image-wrapper">
-        <img src={logo} className="image-logo" alt="logo"/>
+        <img src={logo} className="image-logo"/>
       </div>
+      <h3>Test Header</h3>
       <h2>Forms and Inputs</h2>
       {/* Interesting that this doesn't produce a linting error as there is no ID/for between the label and the input */}
       <div className="form-label-group">
