@@ -7,13 +7,18 @@ function App() {
       <h1>Accessibility Linter & GitHub Actions</h1>
       <hr />
       <h2>Images and Alterative Text</h2>
-      <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
+      <div className="image-wrapper">
+        <img src={logo} className="image-logo" alt="logo"/>
       </div>
       <h2>Forms and Inputs</h2>
       {/* Interesting that this doesn't produce a linting error as there is no ID/for between the label and the input */}
-      <label>First Name</label>
-      <input type="text"/>
+      <div className="form-label-group">
+        <label>First Name</label>
+        <input type="text"/>
+      </div>
+      <h2>Buttons</h2>
+      <button className="button" type="button" onClick={() => console.log("-- Click")}>Click Me</button>
+      <div className="button" onClick={() => console.log("-- Click")}>Click Me: Div</div>
     </div>
   );
 }
