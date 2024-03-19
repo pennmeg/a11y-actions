@@ -10,9 +10,10 @@ function App() {
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo"/>
       </div>
-      <h2>Forms</h2>
-      <label>Name</label>
-      <input type="text"></input>
+      <h2>Forms and Inputs</h2>
+      {/* Interesting that this doesn't produce a linting error as there is no ID/for between the label and the input */}
+      <label>First Name</label>
+      <input type="text"/>
     </div>
   );
 }
