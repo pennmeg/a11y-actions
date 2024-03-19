@@ -10,6 +10,9 @@ function App() {
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo"/>
       </div>
+      <h2>Forms</h2>
+      <label>Name</label>
+      <input type="text"></input>
     </div>
   );
 }
