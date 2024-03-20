@@ -18,7 +18,7 @@ function App() {
       </div>
       <h2>Buttons</h2>
       <button className="button" type="button" onClick={() => console.log("-- Click")}>Click Me</button>
-      <div className="button" role="button" onClick={() => console.log("-- Click")}>Click Me: Div</div>
+      <div className="button" role="button" tabIndex="1" onClick={() => console.log("-- Click")}>Click Me: Div</div>
     </div>
   );
 }
