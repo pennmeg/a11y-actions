@@ -8,17 +8,17 @@ function App() {
       <hr />
       <h2>Images and Alterative Text</h2>
       <div className="image-wrapper">
-        <img src={logo} className="image-logo" alt="logo"/>
+        <img src={logo} className="image-logo"/>
       </div>
       <h2>Forms and Inputs</h2>
       {/* Interesting that this doesn't produce a linting error as there is no ID/for between the label and the input */}
       <div className="form-label-group">
         <label>First Name</label>
-        <input type="text"/>
+        <input type="text"></input>
       </div>
       <h2>Buttons</h2>
       <button className="button" type="button" onClick={() => console.log("-- Click")}>Click Me</button>
-      <div className="button" onClick={() => console.log("-- Click")}>Click Me: Div</div>
+      <div className="button" role="button" onClick={() => console.log("-- Click")}>Click Me: Div</div>
     </div>
   );
 }
