@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from './components/Button';
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         <input type="text"></input>
       </div>
       <h2>Buttons</h2>
-      <button className="button" type="button" onClick={() => console.log("-- Click")}>Click Me</button>
-      <div className="button" role="button" onClick={() => console.log("-- Click")}>Click Me: Div</div>
+      <Button text={"Click Me"}></Button>
+      <div className="button" role="button" tabIndex="0" onClick={() => console.log("-- Click")}>Click Me: Div</div>
     </div>
   );
 }
