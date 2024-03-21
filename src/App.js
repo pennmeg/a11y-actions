@@ -21,7 +21,7 @@ function App() {
       </div>
       <h2>Buttons</h2>
       <Button text={"Click Me"}></Button>
-      <div className="button" role="button" tabIndex="1" onClick={() => console.log("-- Click")}>Click Me: Div</div>
+      <div className="button" role="button" tabIndex="2" onClick={() => console.log("-- Click")}>Click Me: Div</div>
     </div>
   );
 }

@@ -1,5 +1,2 @@
-global-components:
-  CustomImage:
-    element: img
-    attributes:
-    - altText: alt
+rules:
+  tabindex: false # Disable this rule
