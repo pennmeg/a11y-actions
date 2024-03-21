@@ -1,0 +1,5 @@
+global-components:
+  CustomImage:
+    element: img
+    attributes:
+    - altText: alt
