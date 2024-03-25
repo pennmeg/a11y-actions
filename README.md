@@ -2,7 +2,7 @@
 
 ## Goal
 - Create a workflow on GitHub Actions
-- Use the Deque axe linter to test whether code is/not accessible
+- Use the Deque Axe DevTools Linter to test whether code is/not accessible
 
 ## How It Works
 
@@ -16,7 +16,14 @@ This only relates to files that had committed changes. Therefore previous issues
 
 [TO DO: What does a failure look like?]
 
+### False Positives
 
+[TO DO: Things that should fail according to their docs but don't]
+[TO DO: Things that is doesn't check for that then definitely require manual or additional testing]
+
+### Using VS Code
+
+If you're using VS Code, Deque has a free extension for Axe Accessibility Linter that can be used to help view possible failures or accessibility feedback prior to pushing up a PR. This uses similar rules as the Axe DevTools Linter.
 
 ## Created using Create React App
 
