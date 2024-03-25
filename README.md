@@ -16,9 +16,11 @@ _Image Summary: Screenshot of the accessibility check in progress. The text "Som
 
 ### Failures
 
-![Screen Shot 2024-03-25 at 4 49 34 PM](https://github.com/pennmeg/a11y-actions/assets/28637810/c3691b23-8b05-42c3-bedd-a2d474a0dd8f)
+![Screenshot of the GitHub Action for Accessibility Linter failing](https://github.com/pennmeg/a11y-actions/assets/28637810/c3691b23-8b05-42c3-bedd-a2d474a0dd8f)
 
-![Screen Shot 2024-03-25 at 4 49 53 PM](https://github.com/pennmeg/a11y-actions/assets/28637810/06c3ea33-b846-4203-8ec1-92b8ae72175d)
+_Image Summary: Screenshot of the accessibility check that has failed. The text "All checks have failed" appears in red text, with a light gray test of "1 failing check" underneath it. The "Linting for accessibility issues" is has failed._
+
+![Output of failures](https://github.com/pennmeg/a11y-actions/assets/28637810/06c3ea33-b846-4203-8ec1-92b8ae72175d)
 
 ### False Positives
 
