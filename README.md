@@ -4,11 +4,19 @@
 - Create a workflow on GitHub Actions
 - Use the Deque axe linter to test whether code is/not accessible
 
-## Summary
+## How It Works
 
-Upon creating of a new PR, the linter runs checking for any issues. This only relates to files that had committed changes. Therefore previous issues, in untouched files, won't be tested but previous issues in the same file will be found/caught.
+Upon creating of a new PR, the linter runs checking for any issues. 
+
+This only relates to files that had committed changes. Therefore previous issues, in untouched files, won't be tested but previous issues in the same file will be found/caught.
 
 ![Screenshot of the GitHub Action for Accessibility Linter running](https://github.com/pennmeg/a11y-actions/assets/28637810/14e3beaf-a67c-42b7-a5fd-a72d2a0bdd68)
+
+### Failures
+
+[TO DO: What does a failure look like?]
+
+
 
 ## Created using Create React App
 
