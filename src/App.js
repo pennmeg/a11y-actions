@@ -25,10 +25,10 @@ function App() {
       <Button text="Click Me"></Button>
       {/* VS Code Linter doesn't appear to find issues like the one below */}
       {/* This should have a tabindex on it so that is is focusable */}
-      <div className="button" role="button" onClick={() => console.log("-- Click")}>Click Me: Div</div>
+      <div className="button" role="button" tabIndex="2" onClick={() => console.log("-- Click")}>Click Me: Div</div>
       <h2>Links</h2>
       {/* Link text failure, fails on empty tags with no text not necessarily trusting that the text inside is actually helpful */}
-      <a href="">Read More</a>
+      <a href=""></a>
     </div>
   );
 }
