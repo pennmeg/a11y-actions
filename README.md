@@ -35,6 +35,26 @@ I would expect this to fail because the input does not have an ID/for or aria-la
 
 If you're using VS Code, Deque has a free extension for Axe Accessibility Linter that can be used to help view possible failures or accessibility feedback prior to pushing up a PR. This uses similar rules as the Axe DevTools Linter.
 
+### GitHub Co Pilot
+
+I recently started a trial with GitHub CoPilot (in the middle of building this repo), and was pleasantly surprised to see the ability to ask CoPilot to try to fix the accessibility issue or explain it.
+
+![GitHub CoPilot providing a recommendation for the accessibility error that a link does not have discernible text. It recommends adding the words "Learn More" inside the anchor tag.](https://github.com/pennmeg/a11y-actions/assets/28637810/adec4634-618e-4235-bd6d-4ab4a2088b25)
+
+Image Summary: When asked to fix the issue, GitHub CoPilot providing a recommendation for the accessibility error that a link does not have discernible text. It recommends adding the words "Learn More" inside the anchor tag.
+
+When asked for an explanation for the error `axe-linter (link-name): Ensures links have discernible text`: 
+
+```
+The axe-linter warning you're seeing is related to accessibility. In your current code: <a href=""></a>
+
+You have an anchor tag (<a>) with an empty href attribute and no inner text. This is not accessible because screen readers and other assistive technologies rely on the inner text of the link to describe its purpose to users.
+
+To resolve this warning, you should provide discernible text within the anchor tag. For example: <a href="https://example.com">Visit Example.com</a>
+
+In this example, "Visit Example.com" is the discernible text that describes the purpose of the link to the user. If the link is purely decorative or not meant to be interacted with, consider using a different element or adding aria-hidden="true" to the anchor tag.
+```
+
 ## Created using Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
