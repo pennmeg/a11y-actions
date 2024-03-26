@@ -1,4 +1,4 @@
-name: Linting for accessibility issues
+name: Accessinbility Lint
 
 on: [pull_request]
 
