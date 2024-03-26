@@ -22,7 +22,7 @@ _Image Summary: Screenshot of the accessibility check that has failed. The text 
 
 ![Output of failures](https://github.com/pennmeg/a11y-actions/assets/28637810/06c3ea33-b846-4203-8ec1-92b8ae72175d)
 
-### False Positives
+### False Positives and Confusing Behavior
 
 1. Labels
 
@@ -62,6 +62,33 @@ To resolve this warning, you should provide discernible text within the anchor t
 
 In this example, "Visit Example.com" is the discernible text that describes the purpose of the link to the user. If the link is purely decorative or not meant to be interacted with, consider using a different element or adding aria-hidden="true" to the anchor tag.
 ```
+
+#### Config Rules
+
+Axe Devtools Linter supports turning rules on/off, such as: 
+
+```
+// axe-linter.yml
+
+rules:
+  tabindex: false
+```
+
+As well as, providing rules for custom components. I created an image component that accepts a path and alt text as props. I was able to configure the linter to treat this component as an image, and tell it which property is the alt text equivalent and to point to that when applying the alternative text is require ruleset.
+
+```
+// axe-linter.yml
+
+global-components:
+  CustomImage:
+    element: img
+    attributes:
+    - altText: alt
+```
+
+The output is that use of the CustomImage component without passing an `altText` prop results in a failing test.
+
+![Screen Shot 2024-03-26 at 2 10 18 PM](https://github.com/pennmeg/a11y-actions/assets/28637810/4f1f670b-a5f2-4caa-8b5e-e8cd07053218)
 
 ## Created using Create React App
 
