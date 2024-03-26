@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Button } from './components/Button';
+import { CustomImage } from './components/CustomImage';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <div className="image-wrapper">
         <img src={logo} className="image-logo" alt="Logo" />
         {/* TO DO: Building a custom component to manage config linter ruleset */}
-        {/* <CustomImage path={logo} /> */}
+        <CustomImage path={logo} />
       </div>
       <h2>Forms and Inputs</h2>
       {/* Interesting that this doesn't produce a linting error as there is no ID/for between the label and the input */}

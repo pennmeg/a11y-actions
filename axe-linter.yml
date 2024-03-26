@@ -1,2 +1,7 @@
+global-components:
+  CustomImage:
+    element: img
+    attributes:
+    - altText: alt
 rules:
-  tabindex: true
+  tabindex: false
