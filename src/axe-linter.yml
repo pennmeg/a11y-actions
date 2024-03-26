@@ -1,2 +1,2 @@
 rules:
-  tabindex: false
+  tabindex: true
