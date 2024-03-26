@@ -1,6 +1,6 @@
 name: Linting for accessibility issues
 
-on: [pull_request]
+on: [push]
 
 jobs:
   build:
