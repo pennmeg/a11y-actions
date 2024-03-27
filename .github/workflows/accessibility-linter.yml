@@ -1,4 +1,4 @@
-name: Accessinbility Lint
+name: Accessibility Lint
 
 on: [pull_request]
 
