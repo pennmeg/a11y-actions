@@ -2,7 +2,7 @@
 
 ## Goal
 - Create a workflow on GitHub Actions
-- Use the Deque Axe DevTools Linter to test whether code is/not accessible
+- Use the [Deque Axe DevTools Linter](https://docs.deque.com/linter/4.0.0/en/linter-home) to test whether code is/not accessible
 
 ## How It Works
 
