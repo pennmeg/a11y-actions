@@ -22,18 +22,16 @@ _Image Summary: Screenshot of the accessibility check that has failed. The text 
 
 ![Output of failures](https://github.com/pennmeg/a11y-actions/assets/28637810/06c3ea33-b846-4203-8ec1-92b8ae72175d)
 
-### False Positives and Confusing Behavior
+### Notes
 
 1. Labels
 
-Based on the [Axe Linter rules documentation](https://docs.deque.com/linter/4.0.0/en/axe-linter-rules), it says that one of the checks is that every input has a label. However, the following code does not fail:
+Based on the [Axe Linter rules documentation](https://docs.deque.com/linter/4.0.0/en/axe-linter-rules), it says that one of the checks is that every input has a label. However, the following code does not fail as I'd expect. This is actually expected behavior in a React application [see Issue I raised and response](https://github.com/dequelabs/axe-core/issues/4384).
 
 ```
   <label>First Name</label>
   <input type="text" />
 ```
-
-I would expect this to fail because the input does not have an ID/for or aria-labeledby/ID to create a relationship nor is the input wrapped inside the label.
 
 2. Link text
 
